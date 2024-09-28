@@ -36,7 +36,7 @@ if user_input := st.chat_input("Type your message here..."):
     if model:
         try:
             # initialize model role
-            response = model.generate_content("You are a bird speialist.")
+            # response = model.generate_content("You are a bird speialist.")
 			response = model.generate_content(user_input)
             bot_response = response.text
             # Store and display the bot response
