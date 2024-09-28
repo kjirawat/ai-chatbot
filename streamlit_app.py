@@ -35,9 +35,7 @@ if user_input := st.chat_input("Type your message here..."):
     # Use Gemini AI to generate a bot response
     if model:
         try:
-            # initialize model role
-            # response = model.generate_content("You are a bird speialist.")
-			response = model.generate_content(user_input)
+            response = model.generate_content(user_input)
             bot_response = response.text
             # Store and display the bot response
             st.session_state.chat_history.append(("assistant", bot_response))
